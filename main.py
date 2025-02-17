@@ -42,7 +42,7 @@ async def chat(websocket: WebSocket):
             response = openai.chat.completions.create(
                 model='gpt-4',
                 messages=chat_log,
-                temperature=0.6,
+                temperature=0,
                 stream=True
             )
 
